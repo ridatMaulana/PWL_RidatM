@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Document</title>
-</head>
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <title>Document</title>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
     <style>
         .nav-item{
             padding-right: 50px;
@@ -67,10 +67,6 @@
           margin-right: auto;
         }
 
-        .skill .bg-1{
-          height: 100vh;
-        }
-
         .check{
           display: none;
         }
@@ -97,7 +93,10 @@
                 <a class="nav-link" href="#skill">Skill</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+                <a class="nav-link" href="#location">Location</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">contact</a>
               </li>
             </ul>
           </div>
@@ -161,7 +160,7 @@
         </svg>
         <div class="bg-1">
           <h1 class="display-3 fw-bold text-white" data-aos="zoom-in" data-aos-duration="2000">Skill</h1>
-          <div class="container row mx-auto align-items-center justify-content-center">
+          <div class="container row mx-auto align-items-center justify-content-center" style="padding-bottom: 25vh;">
             <div class="col-md-3">
               <div class="card" style="width: 18rem;" data-aos="flip-left"
               data-aos-easing="ease-out-cubic"
@@ -220,34 +219,76 @@
           </div>
         </div>
       </section>
-      
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        let navbar = document.getElementById('navBar');
 
-        var typed = new Typed('#typed',{
-          strings : ['Logo Designer', 'Android Developer', 'Web Developer'],
-          typeSpeed : 40,
-          backSpeed : 55,
-          loop : true
-        });
+      <section class="location" id="location" style="background-color: #FF8DC7;">
+        <div class="container-fluid">
+          <h1 class="display-3 fw-bold text-center text-white" style="padding: 10vh 0 2vh;">Location</h1>
+          <div class="row" style="padding-bottom: 21vh;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1980.748439896377!2d107.13145635800116!3d-6.8308692987658075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68525b414c42e1%3A0x171723ad64bb0f2e!2sJl.%20Smp%202%2C%20Sawah%20Gede%2C%20Kec.%20Cianjur%2C%20Kabupaten%20Cianjur%2C%20Jawa%20Barat%2043212!5e0!3m2!1sid!2sid!4v1667388299302!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+          </div>
+        </div>
+      </section>
 
-        AOS.init();
+      <section class="contact" id="contact">
+        <div class="container-fluid">
+          <h1 class="display-3 fw-bold text-center" style="padding-top: 15vh;padding-bottom: 15vh;">Contact</h1>
+          <div class="card mb-3 px-5 py-2" style="margin-bottom: 20vh;">
+            <form action="">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Masukan Nama</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nama" required>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Masukan Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nama@contoh.com" required>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Masukan Pesan</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+              </div>
+              <div class="mb-3 row">
+                <div class="col-lg-11">
+                </div>
+                <div class="col">
+                  <input type="submit" value="Kirim" class="btn btn-primary">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <div class="container-fluid" style="padding-top:15px">
+        <div class="row">
+            <p class="text-center">Copyright@2022</p>
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+          let navbar = document.getElementById('navBar');
 
-        window.addEventListener('scroll', function(){
-            let scroll = window.scrollY;
+          var typed = new Typed('#typed',{
+            strings : ['Logo Designer', 'Android Developer', 'Web Developer'],
+            typeSpeed : 40,
+            backSpeed : 55,
+            loop : true
+          });
 
-            if (scroll > 50) {
-                navbar.classList.add('bg-1');
-                navbar.classList.add('shadow');
-            } else {
-                navbar.classList.remove('bg-1');
-                navbar.classList.remove('shadow');
-            }
-        });
-    </script>
-</body>
+          AOS.init();
+
+          window.addEventListener('scroll', function(){
+              let scroll = window.scrollY;
+
+              if (scroll > 50) {
+                  navbar.classList.add('bg-1');
+                  navbar.classList.add('shadow');
+              } else {
+                  navbar.classList.remove('bg-1');
+                  navbar.classList.remove('shadow');
+              }
+          });
+      </script>
+  </body>
 </html>
