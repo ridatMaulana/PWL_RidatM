@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <title>Document</title>
-</head>
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <title>Document</title>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
     <style>
-      
         .nav-item{
             padding-right: 50px;
         }
@@ -24,16 +24,47 @@
           border-radius: 12%;
         }
 
+        .about .main{
+          padding-top: 15vh;
+        }
+
+        .about{
+          margin-bottom: 10vh;
+        }
+
         .home{
-          height: 100vh;
           width: 100%;
-          height: 100vh;
           background: url("home.png") top center;
+          height: 100vh;
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
           background-size: cover;
         }
 
-        .bg-custom{
+        /* .img-home{
+          height: 40vh;
+        } */
+
+        .bg-1{
           background-color: #FF8DC7;
+        }
+
+        .bg-2{
+          background-color: rgba(230, 122, 178, .4);
+        }
+
+        .bg-img{
+          background: url("home.png") top center;
+        }
+
+        .home .card-title{
+          padding-top: 20vh;
+        }
+
+        .card{
+          margin-left: auto;
+          margin-right: auto;
         }
 
         .check{
@@ -56,125 +87,208 @@
                 <a class="nav-link" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#kategori">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#skill">Skill</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+                <a class="nav-link" href="#location">Location</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
       
-      <section class="home bg-custom d-flex flex-column justify-content-center align-items-center" id="home">
+      <section class="home d-flex flex-column justify-content-center align-items-center" id="home">
         <!-- <img src="home.png" alt="home" class="d-block w-100 bg-home position-absolute"> -->
-        <div class="container" data-aos="fade-down-right">
-          <div class="row">
-            <div class="col text-center text-white">
-              <h1 class="display-4 fw-bold">Ridat Maulana</h1>
-              <p class="display-4"><span id="typed"></span></p>
-            </div>
-            <div class="col">
-
+        <div class="container mx-auto" data-aos="fade-down-right">
+          <div class="card mb-3 bg-2" style="max-width: 960px;">
+            <div class="row g-0 text-white">
+              <div class="col-md-4">
+                <img src="profile.jpg" class="img-fluid rounded-start" alt="Ridat Maulana">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body text-center">
+                  <h1 class="card-title display-3 fw-bold">Ridat Maulana</h1>
+                  <h1 class="card-text display-3 fw-bold"><span id="typed"></span></h1>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- PROMO -->
-      <section class="promo" id="promo">
-        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-dark" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="img-1.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img-2.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img-3.jpg" class="d-block w-100" alt="...">
+      <!-- About Me -->
+      <section class="about" id="about">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="position-absolute">
+          <path fill="#FF8DC7" fill-opacity="1" d="M0,256L60,266.7C120,277,240,299,360,261.3C480,224,600,128,720,101.3C840,75,960,117,1080,149.3C1200,181,1320,203,1380,213.3L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+        </svg>
+        <div class="container-fluid main" data-aos="fade-up">
+          <h1 class="text-center display-3 fw-bold">About</h1>
+          <div class="card mb-3 shadow-lg bg-1" style="max-width: 640px;">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <img src="profile.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body text-white">
+                  <h1 class="fs-4 fw-bold">Nama</h1>
+                  <p class="fs-4">Ridat Maulana</p>
+                  <h1 class="fs-4 fw-bold">NPM</h1>
+                  <p class="fs-4">5520120016</p>
+                  <h1 class="fs-4 fw-bold">Kelas</h1>
+                  <p class="fs-4">IF A 2020</p>
+                  <h1 class="fs-4 fw-bold">Umur</h1>
+                  <p class="fs-4">20</p>
+                  <h1 class="fs-4 fw-bold">Tinggi</h1>
+                  <p class="fs-4">165 cm</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="kategori bg-dark" id="kategori">
-        <!-- <h1 class="text-white" style="margin:0 0 5vh 10vw;padding-top: 5vh;">KATEGORI</h1>
-        <div class="container text-center">
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-            <div class="col">
-              <div class="card" style="width: 18rem;">
-                <img src="img-1.jpg" class="card-img-top" alt="...">
+      <!-- SKILL -->
+      <section class="skill text-center" id="skill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#FF8DC7" fill-opacity="1" d="M0,128L48,160C96,192,192,256,288,250.7C384,245,480,171,576,149.3C672,128,768,160,864,192C960,224,1056,256,1152,234.7C1248,213,1344,139,1392,101.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+        <div class="bg-1">
+          <h1 class="display-3 fw-bold text-white" data-aos="zoom-in" data-aos-duration="2000">Skill</h1>
+          <div class="container row mx-auto align-items-center justify-content-center" style="padding-bottom: 25vh;">
+            <div class="col-md-3">
+              <div class="card" style="width: 18rem;" data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
+                <div class="card-header">
+                  <h1>WEB</h1>
+                </div>
                 <div class="card-body">
-                  <h5 class="card-title">Card with stretched link</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                  <p class="card-text">
+                    <span class="badge text-bg-primary">HTML</span>
+                    <span class="badge text-bg-primary">CSS</span>
+                    <span class="badge text-bg-primary">JavaScript</span>
+                    <span class="badge text-bg-primary">PHP</span>
+                    <span class="badge text-bg-primary">Laravel</span>
+                    <span class="badge text-bg-primary">Bootstrap4</span>
+                    <span class="badge text-bg-primary">API</span>
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card" style="width: 18rem;">
-                <img src="img-1.jpg" class="card-img-top" alt="...">
+            <div class="col-md-3">
+              <div class="card" style="width: 18rem;" data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+                <div class="card-header">
+                  <h1>ANDROID</h1>
+                </div>
                 <div class="card-body">
-                  <h5 class="card-title">Card with stretched link</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                  <p class="card-text">
+                    <span class="badge text-bg-secondary">Java</span>
+                    <span class="badge text-bg-secondary">Kotlin</span>
+                    <span class="badge text-bg-secondary">XML</span>
+                    <span class="badge text-bg-secondary">Android Volley</span>
+                    <span class="badge text-bg-secondary">Firebase</span>
+                    <span class="badge text-bg-secondary">Retrofit</span>
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card" style="width: 18rem;">
-                <img src="img-1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card with stretched link</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+            <div class="col-md-3">
+              <div class="card" style="width: 18rem;" data-aos="fade-left"
+              data-aos-anchor="#skill"
+              data-aos-offset="500"
+              data-aos-duration="2000">
+                <div class="card-header">
+                  <h1>LOGO</h1>
                 </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card" style="width: 18rem;">
-                <img src="img-1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                  <h5 class="card-title">Card with stretched link</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                  <p class="card-text">
+                    <span class="badge text-bg-dark">Adobe Illustrator</span>
+                    <span class="badge text-bg-dark">Corel Draw</span>
+                    <span class="badge text-bg-dark">Adobe Photoshop</span>
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
       </section>
-      
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js" integrity="sha512-zKaK6G2LZC5YZTX0vKmD7xOwd1zrEEMal4zlTf5Ved/A1RrnW+qt8pWDfo7oz+xeChECS/P9dv6EDwwPwelFfQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        let navbar = document.getElementById('navBar');
 
-        var typed = new Typed('#typed',{
-          strings : ['Logo Designer', 'Android Developer', 'Web Developer'],
-          typeSpeed : 40,
-          backSpeed : 55
-        });
+      <section class="location" id="location" style="background-color: #FF8DC7;">
+        <div class="container-fluid">
+          <h1 class="display-3 fw-bold text-center text-white" style="padding: 10vh 0 2vh;">Location</h1>
+          <div class="row" style="padding-bottom: 21vh;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1980.748439896377!2d107.13145635800116!3d-6.8308692987658075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68525b414c42e1%3A0x171723ad64bb0f2e!2sJl.%20Smp%202%2C%20Sawah%20Gede%2C%20Kec.%20Cianjur%2C%20Kabupaten%20Cianjur%2C%20Jawa%20Barat%2043212!5e0!3m2!1sid!2sid!4v1667388299302!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+          </div>
+        </div>
+      </section>
 
-        AOS.init();
+      <section class="contact" id="contact">
+        <div class="container-fluid">
+          <h1 class="display-3 fw-bold text-center" style="padding-top: 15vh;padding-bottom: 15vh;">Contact</h1>
+          <div class="card mb-3 px-5 py-2" style="margin-bottom: 20vh;">
+            <form action="">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Masukan Nama</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nama" required>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Masukan Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nama@contoh.com" required>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Masukan Pesan</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+              </div>
+              <div class="mb-3 row">
+                <div class="col-lg-11">
+                </div>
+                <div class="col">
+                  <input type="submit" value="Kirim" class="btn btn-primary">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <div class="container-fluid" style="padding-top:15px">
+        <div class="row">
+            <p class="text-center">Copyright@2022</p>
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+          let navbar = document.getElementById('navBar');
 
-        window.addEventListener('scroll', function(){
-            let scroll = window.scrollY;
+          var typed = new Typed('#typed',{
+            strings : ['Logo Designer', 'Android Developer', 'Web Developer'],
+            typeSpeed : 40,
+            backSpeed : 55,
+            loop : true
+          });
 
-            if (scroll > 50) {
-                navbar.classList.add('bg-custom');
-                navbar.classList.add('shadow');
-            } else {
-                navbar.classList.remove('bg-custom');
-                navbar.classList.remove('shadow');
-            }
-        });
-    </script>
-</body>
+          AOS.init();
+
+          window.addEventListener('scroll', function(){
+              let scroll = window.scrollY;
+
+              if (scroll > 50) {
+                  navbar.classList.add('bg-1');
+                  navbar.classList.add('shadow');
+              } else {
+                  navbar.classList.remove('bg-1');
+                  navbar.classList.remove('shadow');
+              }
+          });
+      </script>
+  </body>
 </html>
